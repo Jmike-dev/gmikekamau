@@ -1,5 +1,9 @@
 function Home() {
-    return <div>Home</div>;
+    return (
+        <section id="home" className="min-h-screen">
+            Home section
+        </section>
+    );
 }
 
 export default Home;

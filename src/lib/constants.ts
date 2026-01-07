@@ -6,6 +6,12 @@ export const techCardsItems = [
         bgColor: 'bg-[#3178C6]/20',
     },
     {
+        name: 'JavaScript',
+        description: 'language the powers the web ',
+        imageUrl: '/imgs/logos/javascript.svg',
+        bgColor: 'bg-[#3178C6]/20',
+    },
+    {
         name: 'React',
         description: 'JavaScript Library',
         imageUrl: '/imgs/logos/react.svg',

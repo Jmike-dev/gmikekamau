@@ -3,7 +3,7 @@ import Skills from '@/components/home/skills';
 
 function Home() {
     return (
-        <section id="home" className="min-h-screen">
+        <section id="home" className="min-h-screen space-y-4">
             <HeroSection />
             <Skills />
         </section>

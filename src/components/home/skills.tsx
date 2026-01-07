@@ -4,7 +4,10 @@ import TechCard from '../ui/TextCard';
 
 const Skills = () => {
     return (
-        <div className="relative z-10 mx-auto w-1/2 py-16 sm:py-24" id="skills">
+        <div
+            className="relative z-10 mx-auto w-11/12 py-16 sm:py-24 md:w-1/2 lg:w-1/2"
+            id="skills"
+        >
             <div className="mb-10 space-y-4">
                 <motion.h1
                     initial={{opacity: 0, x: -75}}

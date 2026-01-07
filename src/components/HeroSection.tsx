@@ -25,9 +25,7 @@ const HeroSection = () => {
                         applications.
                     </p>
                     <div className="flex flex-col items-center gap-4 sm:flex-row">
-                        {/* <ShinyButton icon={<ChevronRight />}>
-                            <Link href="#work">See My Work</Link>
-                        </ShinyButton> */}
+                        //! {/* todo: Replace this content with resume data */}
                         <a
                             href="/resume/CV_en.pdf"
                             download

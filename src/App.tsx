@@ -12,7 +12,7 @@ const navItems = [
 
 function App() {
     return (
-        <main className="bg-brand-background">
+        <main className="bg-brand-background cursor-default">
             <Navbar navItems={navItems} />
             <Home />
             <Contact />

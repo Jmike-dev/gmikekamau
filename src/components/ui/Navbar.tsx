@@ -55,7 +55,7 @@ export const Navbar = ({
                             const el = document.querySelector(navItem.link);
                             el?.scrollIntoView({behavior: 'smooth'});
                         }}
-                        className="text-brand-text hover:text-brand-primary relative flex cursor-pointer items-center space-x-1"
+                        className="text-brand-text hover:text-brand-secondary relative flex cursor-pointer items-center space-x-1"
                     >
                         <span className="block sm:hidden">{navItem.icon}</span>
                         <span className="hidden font-medium capitalize sm:block">

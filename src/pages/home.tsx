@@ -1,7 +1,9 @@
+import HeroSection from '@/components/HeroSection';
+
 function Home() {
     return (
         <section id="home" className="min-h-screen">
-            Home section
+            <HeroSection />
         </section>
     );
 }

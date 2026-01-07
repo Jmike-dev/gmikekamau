@@ -23,7 +23,7 @@ const ProjectCard = ({project}: {project: ProjectProps}) => {
             whileInView={{opacity: 1, y: 0}}
             viewport={{once: true}}
             transition={{duration: 0.5, delay: 0.25}}
-            className="bg-brand-secondary space-y-8 rounded-lg p-4 sm:p-8"
+            className="border-brand-secondary space-y-8 rounded-lg border-2 p-4 sm:p-8"
         >
             <Link
                 to={`work/${id}`}

@@ -7,7 +7,7 @@ export const techCardsItems = [
     },
     {
         name: 'JavaScript',
-        description: 'language the powers the web ',
+        description: 'language that powers the web ',
         imageUrl: '/imgs/logos/javascript.svg',
         bgColor: 'bg-[#3178C6]/20',
     },

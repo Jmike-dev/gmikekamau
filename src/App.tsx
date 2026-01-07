@@ -6,6 +6,7 @@ import {Navbar} from '@/components/ui/Navbar';
 
 const navItems = [
     {name: 'Home', link: '#home', icon: <House />},
+    {name: 'skills', link: '#skills', icon: <BriefcaseBusiness />},
     {name: 'my projects', link: '#my-projects', icon: <BriefcaseBusiness />},
     {name: 'Contact', link: '#contact', icon: <ContactIco />},
 ];

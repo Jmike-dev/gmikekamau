@@ -1,5 +1,4 @@
 import {Download} from 'lucide-react';
-// import ShinyButton from './ui/ShinyButton';
 import {TextGenerateEffect} from './ui/TextGenerate';
 
 const HeroSection = () => {
@@ -20,12 +19,11 @@ const HeroSection = () => {
                         className="max-w-5xl text-center text-[40px] leading-snug font-bold tracking-wide md:text-6xl lg:text-7xl"
                     />
                     <p className="text-dark-200 pt-5 pb-8 text-sm sm:text-base md:text-lg dark:text-stone-200/70">
-                        Hi, I&apos;m Michael Gichuhi, I create intuitive,
-                        visually stunning and highly functional web
-                        applications.
+                        Hi, I'm Michael Gichuhi, I create intuitive, visually
+                        stunning and highly functional web applications.
                     </p>
                     <div className="flex flex-col items-center gap-4 sm:flex-row">
-                        //! {/* todo: Replace this content with resume data */}
+                        {/* //!: Replace this content with resume data */}
                         <a
                             href="/resume/CV_en.pdf"
                             download

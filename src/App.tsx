@@ -18,12 +18,23 @@ function App() {
     return (
         <main className="bg-brand-background cursor-default">
             <Navbar navItems={navItems} />
+
             <Routes>
-                <Route path="work/:id" element={<WorkDetails />} />
+                {/* Home Page */}
+                <Route
+                    path="/"
+                    element={
+                        <>
+                            <Home />
+                            <MyProjects />
+                            <Contact />
+                        </>
+                    }
+                />
+
+                {/* Project Details Page */}
+                <Route path="/work/:id" element={<WorkDetails />} />
             </Routes>
-            <Home />
-            <MyProjects />
-            <Contact />
         </main>
     );
 }

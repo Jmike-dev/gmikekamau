@@ -1,9 +1,7 @@
-import {MoveUpRight} from 'lucide-react';
-import {Link} from 'react-router';
 import {motion} from 'framer-motion';
-import ProjectTechnologiesMini from './ProjectTechnologiesMini';
+import {ExternalLink, Github} from 'lucide-react';
 
-interface ProjectProps {
+type Project = {
     id: string;
     heading: string;
     subheading: string;
@@ -12,49 +10,79 @@ interface ProjectProps {
     techStack: string[];
     liveDemoUrl: string;
     sourceCodeUrl: string;
-}
+};
 
-const ProjectCard = ({project}: {project: ProjectProps}) => {
-    const {id, heading, imageUrl, techStack} = project;
-
+export default function ProjectCard({project}: {project: Project}) {
     return (
         <motion.div
-            initial={{opacity: 0, y: 75}}
-            whileInView={{opacity: 1, y: 0}}
-            viewport={{once: true}}
-            transition={{duration: 0.5, delay: 0.25}}
-            className="border-brand-secondary space-y-8 rounded-lg border-2 p-4 sm:p-8"
+            whileHover={{y: -8}}
+            transition={{duration: 0.3}}
+            className="group border-brand-secondary/30 bg-brand-background hover:border-brand-primary relative overflow-hidden rounded-2xl border shadow-lg transition-all duration-300"
         >
-            <Link
-                to={`work/${id}`}
-                className="block overflow-hidden rounded-lg"
-            >
+            {/* Glow effect */}
+            <div className="bg-brand-primary/10 absolute -inset-1 opacity-0 blur-xl transition-all duration-500 group-hover:opacity-30" />
+
+            {/* Image */}
+            <div className="relative h-60 w-full overflow-hidden rounded-t-2xl">
                 <img
-                    src={imageUrl}
-                    alt={heading}
-                    className="h-auto w-full transition-transform duration-700 hover:scale-110"
-                    loading="lazy"
+                    src={project.imageUrl}
+                    alt={project.heading}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-            </Link>
 
-            <div>
-                <h3 className="text-brand-text text-2xl font-semibold sm:text-3xl">
-                    {heading}
-                </h3>
+                <div className="from-brand-background absolute inset-0 bg-gradient-to-t via-transparent to-transparent opacity-80" />
+            </div>
 
-                <div className="mt-4 flex flex-col justify-between gap-5 sm:flex-row">
-                    <ProjectTechnologiesMini techStack={techStack} />
+            {/* Content */}
+            <div className="relative space-y-5 p-6">
+                {/* Title */}
+                <div>
+                    <h3 className="text-brand-text text-2xl font-semibold">
+                        {project.heading}
+                    </h3>
+                    <p className="text-brand-primary text-sm">
+                        {project.subheading}
+                    </p>
+                </div>
 
-                    <Link
-                        to={`/work/${id}`}
-                        className="bg-primary hover:bg-primary/80 self-start rounded-lg p-3 transition-colors duration-200 sm:self-end"
+                {/* Description */}
+                <p className="text-brand-text/70 text-sm leading-relaxed">
+                    {project.description}
+                </p>
+
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2">
+                    {project.techStack.map((tech, index) => (
+                        <span
+                            key={index}
+                            className="border-brand-secondary/40 bg-brand-secondary/20 text-brand-text rounded-full border px-3 py-1 text-xs font-medium"
+                        >
+                            {tech}
+                        </span>
+                    ))}
+                </div>
+
+                {/* Buttons */}
+                <div className="flex items-center gap-4 pt-2">
+                    <a
+                        href={project.liveDemoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-brand-primary text-brand-background hover:shadow-brand-primary/40 flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:brightness-110"
                     >
-                        <MoveUpRight className="dark:text-dark-200 size-5 text-[#F3F4F3] sm:size-8" />
-                    </Link>
+                        Live Demo <ExternalLink size={16} />
+                    </a>
+
+                    <a
+                        href={project.sourceCodeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-brand-text flex items-center gap-2 rounded-lg border px-4 py-2 text-sm font-medium transition-all duration-300"
+                    >
+                        Code <Github size={16} />
+                    </a>
                 </div>
             </div>
         </motion.div>
     );
-};
-
-export default ProjectCard;
+}

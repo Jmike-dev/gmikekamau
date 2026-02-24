@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/portfolio/browser",
+    "public": "dist",
     "target":"michael-gichuhi-portfolio",
     "ignore": [
       "firebase.json",

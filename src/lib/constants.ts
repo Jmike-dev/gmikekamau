@@ -79,17 +79,18 @@ export const portfolioProjects = [
         heading: 'medical Recorder',
         subheading: 'a clinical medical recording application',
         description:
-            'A modern website with all ecommerce functionalities. It includes features like product browsing, shopping cart, user authentication, ordering a product... The application is developed with react + typescript for frontend part, and Supabase as backend.',
+            'A full-featured clinical records management application that supports structured daily patient documentation and integrates inventory tracking to monitor medical stock during prescription dispensing.',
         imageUrl: '/imgs/projects/medicalRecorderLogin.png',
         techStack: [
             'TypeScript',
             'Angular',
             'nest js',
             'Supabase',
+            'firebase',
             'TailwindCSS',
             'angular material',
         ],
-        liveDemoUrl: 'https://shoptidy.vercel.app',
-        sourceCodeUrl: 'https://github.com/andrijaweb/ecommerce-app',
+        liveDemoUrl: 'https://medical-recorder-develop.web.app',
+        sourceCodeUrl: 'https://github.com/Jmike-dev/medical-recorder',
     },
 ];

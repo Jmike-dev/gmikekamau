@@ -44,7 +44,7 @@ export const Navbar = ({
                 }}
                 transition={{duration: 0.2}}
                 className={cn(
-                    'border-brand-secondary bg-brand-background shadow-brand-secondary fixed inset-x-0 top-10 z-[5000] mx-auto flex max-w-fit items-center justify-center space-x-4 rounded-lg border px-8 py-4',
+                    'border-brand-secondary bg-brand-background shadow-brand-secondary fixed inset-x-0 top-10 z-[5000] mx-auto hidden max-w-fit items-center justify-center space-x-4 rounded-lg border px-8 py-4 sm:flex',
                     className
                 )}
             >

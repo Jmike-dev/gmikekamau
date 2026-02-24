@@ -4,10 +4,7 @@ import {TextGenerateEffect} from './ui/TextGenerate';
 const HeroSection = () => {
     return (
         <>
-            <div className="absolute top-0 left-0 flex min-h-screen w-full items-center justify-center">
-                {/* Radial gradient for the container to give a faded look */}
-                {/* <div className="dark:bg-dark-100 bg-brand-background pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" /> */}
-            </div>
+            <div className="absolute top-0 left-0 flex min-h-screen w-full items-center justify-center"></div>
 
             <div className="relative flex flex-col items-center justify-center pt-36 pb-20 sm:min-h-screen sm:p-0">
                 <div className="relative z-10 flex flex-col items-center justify-center text-center">
@@ -35,9 +32,7 @@ const HeroSection = () => {
                             </span>
                         </a>
                     </div>
-                    <div className="mt-8 mb-10 flex w-full flex-row items-center justify-center">
-                        {/* <AnimatedTooltip items={tooltipItems} /> */}
-                    </div>
+                    <div className="mt-8 mb-10 flex w-full flex-row items-center justify-center"></div>
                 </div>
             </div>
         </>

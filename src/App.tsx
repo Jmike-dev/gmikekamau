@@ -10,7 +10,7 @@ import MyProjects from './pages/projects';
 const navItems = [
     {name: 'Home', link: '#home', icon: <House />},
     {name: 'skills', link: '#skills', icon: <BriefcaseBusiness />},
-    {name: 'my projects', link: '#myProjects', icon: <BriefcaseBusiness />},
+    {name: 'projects', link: '#myProjects', icon: <BriefcaseBusiness />},
     // {name: 'Contact', link: '#contact', icon: <ContactIco />},
 ];
 

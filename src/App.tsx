@@ -3,7 +3,7 @@ import Home from '@/pages/home';
 // import Contact from '@/pages/contact';
 import {BriefcaseBusiness, House} from 'lucide-react';
 import {Navbar} from '@/components/ui/Navbar';
-import {Route, Routes} from 'react-router';
+import {Navigate, Route, Routes} from 'react-router';
 import WorkDetails from './pages/WorkDetails';
 import MyProjects from './pages/projects';
 
@@ -31,9 +31,11 @@ function App() {
                         </>
                     }
                 />
-
                 {/* Project Details Page */}
                 <Route path="/work/:id" element={<WorkDetails />} />
+
+                {/* Catch-all: redirect unknown routes to home */}
+                <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
         </main>
     );

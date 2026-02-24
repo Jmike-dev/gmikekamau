@@ -25,7 +25,7 @@ const HeroSection = () => {
                     <div className="flex flex-col items-center gap-4 sm:flex-row">
                         {/* //!: Replace this content with resume data */}
                         <a
-                            href="/resume/CV_en.pdf"
+                            href="/resume/Michael-Gichuhi-CV.pdf"
                             download
                             className="group flex items-center gap-2.5"
                         >

@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "public",
     "target":"michael-gichuhi-portfolio",
     "ignore": [
       "firebase.json",

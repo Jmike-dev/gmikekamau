@@ -30,6 +30,7 @@ const HeroSection = () => {
                     <div className="flex flex-col items-center gap-6 sm:flex-row sm:gap-10">
                         {/* Download CV (Improved Design) */}
                         <a
+                            aria-label="Download Michael Gichuhi's CV as a PDF file"
                             href="/resume/Michael-Gichuhi-CV.pdf"
                             download
                             className="group border-brand-primary/40 bg-brand-primary/10 text-brand-primary hover:bg-brand-primary hover:text-brand-background hover:shadow-brand-primary/30 relative flex items-center gap-3 rounded-full border px-6 py-3 font-semibold backdrop-blur-md transition-all duration-300 hover:shadow-lg"
